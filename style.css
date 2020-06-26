@@ -144,7 +144,7 @@ function myFunction() {
 }
 
 /* Cards media queries */
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
   .cards {
     grid-template-columns: 1fr;
   }
