@@ -162,9 +162,6 @@ function myFunction() {
    .cards {
     grid-template-columns: 2fr;
   }
-   .card-white {
-    width: auto;
-  }
 }
 
 // Medium devices (tablets, 768px and up)
