@@ -11,10 +11,6 @@ h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
-div {
- margin: auto;
-}
-
 p {
   color: #404042;
   opacity: .7;
@@ -22,9 +18,8 @@ p {
 
 /* Page content */
 .container {
-  margin: auto;
-  padding: 5px;
-  border: 10px;	
+  width: 1250px;
+  margin: auto;	
 }
 
 .banner {
