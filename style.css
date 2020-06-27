@@ -27,7 +27,7 @@ p {
   background-color: #cccccc; /* Used if the image is unavailable */
   background-size: contain;
   background-position: contain;
-  padding: 150px 0px;
+  padding: 35px 15px;
   text-align: center;
 }
 
