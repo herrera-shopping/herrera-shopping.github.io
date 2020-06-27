@@ -19,11 +19,13 @@ p {
 /* Page content */
 .container {
   width: 1250px;
-  margin: auto;	
+  margin: auto;
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('images/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url
+
+('images/background.jpg');
   background-color: #cccccc; /* Used if the image is unavailable */
   background-size: contain;
   background-position: contain;
@@ -72,7 +74,7 @@ p {
 .card-white img {
   width: 280px;
   height: 280px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 4px;
 }
 
@@ -92,6 +94,7 @@ p {
 
 .cards {
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: flex-end;
   grid-gap: 5px;
@@ -99,6 +102,7 @@ p {
 
 .contacts-grid {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
   align-items: flex-end;
   grid-gap: 0px;
@@ -115,7 +119,9 @@ var banner = document.getElementById("mybanner");
 // Get the offset position of the navbar
 var sticky = banner.offsetTop;
 
-// Add the "sticky" class to the banner when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// Add the "sticky" class to the banner when you reach its scroll position. Remove "sticky" 
+
+when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
     banner.classList.add("sticky");
@@ -133,14 +139,43 @@ function myFunction() {
   width: 100%
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the banner gets a new position at the top of the page (position:fixed and top:0) */
+/* Add some top padding to the page content to prevent sudden quick movement (as the banner 
+
+gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .container {
   padding-top: 102px;
 }
 
 /* Cards media queries */
-@media only screen and (max-width: 800px) {
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+   .cards {
+    grid-template-columns: 2fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 3fr;
+  }
+  
+  .card-white {
+    width: auto;
   }
 }
