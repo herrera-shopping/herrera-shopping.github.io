@@ -18,13 +18,15 @@ p {
 
 /* Page content */
 .container {
-  width: 1250px;
+  width: 1000px;
   margin: auto;
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('images/background.jpg');
-  background-color: #cccccc; /* Used if the image is unavailable */
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url
+
+('images/background.jpg');
+  background-color: #C71585; /* Used if the image is unavailable */
   background-size: contain;
   background-position: contain;
   padding: 35px 15px;
@@ -35,7 +37,6 @@ p {
   color: yellow;
   font-size: 48px;
   margin: O;
-  background-position: center;
 }
 
 .banner p {
@@ -51,7 +52,6 @@ p {
   display: inline-block;
   text-decoration: none;
   transition: .3s;
-  width: 100px;
 }
 
 .button-blue:hover {
@@ -103,7 +103,7 @@ p {
 
   grid-template-columns: 1fr 1fr;
   align-items: flex-end;
-  grid-gap: 0px;
+  grid-gap: 10px;
   margin: auto;
 }
 
@@ -146,14 +146,16 @@ gets a new position at the top of the page (position:fixed and top:0) */
 
 /* Cards media queries */
 // Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
   }
-  
-  .card-white {
-    width: auto;
+   .container {
+    width: 400;
   }
+    .card-white {
+    width: 300;
+  }   
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -161,19 +163,35 @@ gets a new position at the top of the page (position:fixed and top:0) */
    .cards {
     grid-template-columns: 2fr;
   }
-  
-  .card-white {
+    .container {
+    width: 800;
+  }
+    .card-white {
     width: auto;
   }
+    .banner {
+    width: 800;
+  }
+    .footer {
+    width: 800;
+  } 
 }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+// Medium devices
+@media (min-width: 1050px) {
   .cards {
     grid-template-columns: 3fr;
   }
-  
-  .card-white {
+    .container {
+    width: 400;
+  }
+    .card-white {
     width: auto;
   }
+    .banner {
+    width: 400;
+  }
+    .footer {
+    width: 400;
+  } 
 }
