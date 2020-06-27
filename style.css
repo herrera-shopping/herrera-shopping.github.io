@@ -70,9 +70,9 @@ p {
 }
 
 .card-white img {
-  width: 300px;
-  height: 300px;
-  object-fit: contain;
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
   border-radius: 4px;
 }
 
