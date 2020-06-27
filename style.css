@@ -23,13 +23,11 @@ p {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url
-
-('images/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('images/background.jpg');
   background-color: #cccccc; /* Used if the image is unavailable */
   background-size: contain;
   background-position: contain;
-  padding: 30px 15px;
+  padding: 150px 0px;
   text-align: center;
 }
 
