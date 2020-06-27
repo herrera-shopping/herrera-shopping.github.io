@@ -23,9 +23,7 @@ p {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url
-
-('images/background.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('images/background.jpg');
   background-color: #C71585; /* Used if the image is unavailable */
   background-size: contain;
   background-position: contain;
@@ -36,7 +34,7 @@ p {
 .banner h1 {
   color: yellow;
   font-size: 48px;
-  margin: O;
+  margin: 0;
 }
 
 .banner p {
