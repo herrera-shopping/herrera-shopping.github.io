@@ -29,6 +29,7 @@ p {
   background-position: contain;
   padding: 35px 15px;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .banner h1 {
@@ -73,6 +74,7 @@ p {
   object-fit: contain;
   border-radius: 4px;
 }
+
 .Ref_Articles {
   font-family: 'Bangers', cursive;
   font-size: 14px;
@@ -90,6 +92,7 @@ p {
   background: #404042;
   text-align: center;
   padding: 10px 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer p {
